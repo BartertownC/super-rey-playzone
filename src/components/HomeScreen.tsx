@@ -157,16 +157,15 @@ const HomeScreen: React.FC = () => {
             if (soundEnabled) soundManager.playDinoRoar();
           }}
           onMouseLeave={() => setLogoHover(false)}
-        >
-          <img
-            src="/mascot.png"
-            alt="Super Rey"
-            style={{
-              width: '180px',
-              height: 'auto',
-              filter: 'drop-shadow(0 10px 30px rgba(102, 126, 234, 0.3))',
-            }}
-          />
+<img 
+  src={`${process.env.PUBLIC_URL}/mascot.png`} 
+  alt="Super Rey"
+  style={{
+    width: '180px',
+    height: 'auto',
+    filter: 'drop-shadow(0 10px 30px rgba(102, 126, 234, 0.3))',
+  }}
+/>
         </div>
         <h1
           style={{
